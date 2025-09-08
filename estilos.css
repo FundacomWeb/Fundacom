@@ -1,0 +1,231 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 45vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 5px #000;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2em;
+  margin: 10px 0 0;
+}
+
+.justificar {
+  text-align: justify;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+.subtitulo{
+  font-size: 36px;
+}
+nav a {
+  background-color: rgb(245, 181, 39);
+  padding: 10px 20px;
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+}
+
+/* TEXTO E IMAGEN */
+/*
+.contenedor img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover; /* para que la imagen no se deforme
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+.contenedor p {
+  flex: 1;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Alternar posición con clase especial 
+.contenedor.reverse {
+  flex-direction: row-reverse;
+}
+*/
+.bloque {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.bloque img {
+  width: 180px;   /* 👈 Ajusta el ancho */
+  height: 180px;  /* 👈 Ajusta el alto (mismo valor para que sea cuadrada) */
+  object-fit: cover;  /* recorta sin deformar */
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* sombra opcional */
+}
+
+.bloque .texto {
+  flex: 1;
+  margin: 0 20px;
+  padding: 20px;
+  /*background-color: #2e7d32; /* color de fondo del recuadro */
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+/* Alternar lados (imagen a la derecha, texto a la izquierda) */
+.bloque.reverse {
+  flex-direction: row-reverse;
+}
+
+.contacto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  justify-items: center;
+}
+
+.contact-card {
+  border: 3px solid #2e7d32;   /* 👈 borde grueso */
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  width: 220px;
+  background: transparent;     /* sin relleno */
+}
+
+.contact-card img {
+  width: 50px;   /* icono pequeño */
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.contact-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+  color: #2e7d32;
+}
+
+.contact-card p {
+  font-size: 1em;
+  color: #333;
+  word-break: break-word; /* por si el correo es largo */
+}
+
+.galeria {
+  display: flex;
+  justify-content: center; /* centra todo el bloque */
+  gap: 20px; /* margen igual entre imágenes */
+  margin-top: 40px;
+  flex-wrap: wrap; /* permite que salten de línea si la pantalla es pequeña */
+}
+
+.galeria img {
+  width: 220px;   /* tamaño fijo de cada imagen */
+  height: 220px;  /* cuadradas */
+  object-fit: cover; /* recorta para que no se deformen */
+  border-radius: 10px; /* opcional: bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* opcional: sombra */
+}
+
+/* TRANSPARENCIA */
+
+.documentos {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.pdf-buttons {
+  display: flex;
+  flex-wrap: wrap; /* permite que bajen si no caben */
+  justify-content: center;
+  gap: 20px; /* espacio entre botones */
+  margin-top: 20px;
+}
+
+.pdf-btn {
+  display: flex;
+  flex-direction: column; /* ícono arriba, texto abajo */
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 2px solid #c62828; /* borde rojo tipo PDF */
+  border-radius: 12px;
+  padding: 15px 20px;
+  width: 150px;
+  transition: 0.3s;
+  background-color: white;
+}
+
+.pdf-btn img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.pdf-btn span {
+  font-size: 1em;
+  font-weight: bold;
+  color: #c62828;
+}
+
+.pdf-btn:hover {
+  background-color: #c62828;
+}
+
+.pdf-btn:hover span {
+  color: white;
+}
