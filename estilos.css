@@ -229,3 +229,140 @@ footer {
 .pdf-btn:hover span {
   color: white;
 }
+
+/* Cambio de pagina */
+.switch {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  gap: 15px;
+}
+
+.switch-btn {
+  padding: 10px 20px;
+  border: 2px solid #2e7d32;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #2e7d32;
+  transition: 0.3s;
+}
+
+.switch-btn:hover {
+  background: #2e7d32;
+  color: #fff;
+}
+
+.switch-btn.activo {
+  background: #2e7d32;
+  color: #fff;
+}
+
+/* MISION VISION NUEVO */
+
+/* Contenedor principal */
+.vision-mision {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+/* Grid de 4 imágenes cuadradas */
+.imagenes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  flex: 1;
+}
+
+.imagenes-grid img {
+  width: 100%;
+  aspect-ratio: 1/1; /* mantiene cuadradas */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Texto de visión y misión */
+.texto-vision-mision {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.texto-vision-mision h2 {
+  margin-top: 0;
+  color: #2e7d32;
+}
+
+.texto-vision-mision p.justificar {
+  text-align: justify;
+}
+
+/* Imagen ancha dentro del bloque de texto */
+.imagen-ancha img {
+  width: 100%;   /* mismo ancho que el bloque de texto */
+  aspect-ratio: 2.5 / 1; /* más ancha que alta */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* FORMULARIO */
+
+.contact-form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.contact-form input,
+.contact-form textarea {
+  /* width: 100%; */
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #2e7d32;
+  outline: none;
+  box-shadow: 0 0 5px rgba(46,125,50,0.4);
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form button {
+  background: #2e7d32;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #1b5e20;
+}
