@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="estilos.css">
+  <style>
+    header {
+      background-image: url('img/fondo_contacto.jpeg');
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contacto</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Historia</a>
+    <a href="objetivo.html">Objetivo</a>
+    <a href="vision_mision.html">Visión y Misión</a>
+    <a href="equipoTrabajo.html">Equipo de Trabajo</a>
+    <a href="funcion.html">Nuestra Labor</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="transparencia.html">Transparencia</a>
+  </nav>
+
+<main>
+  <section class="contacto">
+    <div class="contact-card">
+      <!-- <img src="img/telefono.png" alt="Icono Teléfono"> -->
+      <h3>Teléfono</h3>
+      <p>+55 55 889067</p>
+    </div>
+
+    <div class="contact-card">
+      <!-- <img src="img/correo.png" alt="Icono Correo"> -->
+      <h3>Correo electrónico</h3>
+      <p>fundacom2000@hotmail.com</p>
+    </div>
+
+    <div class="contact-card">
+      <!-- <img src="img/bbva.png" alt="Icono BBVA"> -->
+      <h3>Cuenta BBVA</h3>
+      <p>CLABE: 012180001218327356</p>
+    </div>
+
+    <div class="contact-card">
+      <!-- <img src="img/banamex.png" alt="Icono Banamex"> -->
+      <h3>Cuenta Banamex</h3>
+      <p>CLABE: 002180701429433268</p>
+    </div>
+  </section>
+</main>
+
+<!-- FORMULARIO -->
+ 
+<form action="https://formsubmit.co/fundacom2000@hotmail.com" method="POST" class="contact-form">
+  <!-- Protección contra spam -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="box">
+
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="nombre" required>
+
+  <label for="telefono">Teléfono:</label>
+  <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="Ej. 5512345678">
+
+  <label for="correo">Correo:</label>
+  <input type="email" id="correo" name="correo" required>
+
+  <label for="interes">Interés:</label>
+  <textarea id="interes" name="interes" rows="4"></textarea>
+
+  <button type="submit">Enviar</button>
+</form>
+
+
+
+<!-- WHATSAPP -->
+<!-- <a href="https://wa.me/5527244486" target="_blank">
+  <button style="background-color:#25d366; color:white; padding:10px 20px; border:none; border-radius:5px;">
+    Enviar mensaje por WhatsApp
+  </button>
+</a> -->
+<a href="https://wa.me/5527244486" target="_blank" class="whatsapp-btn">
+  <img src="img/WhatsApp.webp">
+</a>
+
+
+  <footer>
+    <p>© 2025 Fundacom</p>
+  </footer>
+</body>
+
+
+</html>
+
